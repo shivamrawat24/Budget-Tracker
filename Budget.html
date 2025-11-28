@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Device</title>
+    <link rel="stylesheet" href="Budget.css">
+</head>
+
+<body>
+    <div class="budget-field">
+        <nav>
+            <ul>
+                <li>
+                    <h4><a href="https://github.com/shivamrawat24">Shivam Rawat Creations</a></h4>
+                </li>
+                <li>
+                    <p id="user-balance">Balance will apear here</p>
+                </li>
+            </ul>
+        </nav>
+        <div class="budget-work" id="btn-holder">
+            <div class="receiver">
+                <input type="number" id="user-budget" placeholder="Place your Budget">
+                <button class="btn-first" onclick="receiver()">Add Budget</button>
+            </div>
+            <!-- <p></p> -->
+
+            <div class="btn-files" id="data-Holder">
+                <input type="text" id="expense-list" placeholder="Add Expenses name">
+                <input type="number" id="expense-amt" placeholder=" Enter Amount">
+                <button onclick="budgetSummary()">Add Expense details</button>
+            </div>
+            <div id="expenses-display">
+                <h3>Expenses: </h3>
+                <ul id="expense-items"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="budgetLogics.js"></script>
+</body>
+</html>
